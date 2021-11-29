@@ -1,30 +1,13 @@
 module Main exposing (main)
 
 import Browser
-import Browser.Dom
 import Codec
 import Element exposing (..)
-import Element.Background as Background
-import Element.Border as Border
 import Element.Font as Font
-import Element.Input as Input
-import FormatNumber
-import FormatNumber.Locales
 import Html
-import Html.Attributes
-import Html.Events
 import Http
-import Json.Decode
-import List.Extra
 import Process
-import QRCode
-import R10.Svg.Icons
-import R10.Svg.IconsExtra
-import R10.Svg.Logos
-import Regex
 import Task
-import Url
-import Url.Parser exposing ((</>))
 
 
 

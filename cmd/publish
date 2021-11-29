@@ -1,2 +1,2 @@
 #!/bin/bash
-surge docs training01.surge.sh
+surge docs your-sub-domain.surge.sh

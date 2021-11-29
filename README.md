@@ -17,27 +17,31 @@ If you get permission error installing there packages globally, follow one of th
 * Clone the repository and cd in it
 
 ```
-git clone https://git.rakuten-it.com/scm/elm/training.git
+git clone https://github.com/lucamug/training
 cd training
 ```
 
-For the webserver, there are two main options. In both cases you can access the app at http://localhost:8000/ once the server started.
+For the webserver, there are two main options:
 
 ### 1. Elm Reactor
 
-* Now you can start the Elm built-in web server with:
+* Execute
 
 ```
 elm reactor
 ```
 
+Access http://localhost:8000/src/Main.elm
+
 ### 2. Elm Go
 
-* Alternatively you can use `elm-go` as web server:
+* Execute
 
 ```
 elm-go src/Main.elm --dir=docs --start-page=200.html --pushstate --hot -- --output=docs/elm.js --debug
 ```
+
+Access http://localhost:8000/
 
 This activate several extra features such as:
 
@@ -68,21 +72,30 @@ These commands are also available as
 cmd/build
 ```
 
-* You can deploy the docs folder using your favorite system. If you have a Surge account you can
+* You can deploy the docs folder using your favorite system. If you have a Surge account you can run this command (change "your-sub-domain" to something else):
 
 ```
-surge docs you-sub-domain.surge.sh
+surge docs your-sub-domain.surge.sh
 ```
 
-These commands are also available as
+You should then be able to access the Elm app at
 
-```
-cmd/publish
-```
+https://your-sub-domain.surge.sh/
+
+
+## Notes about Windows
+
+* Install git https://git-scm.com/downloads
+* Install NodeJs and the npm modules as explained in the [README.md](README.md).
+
+In Windows is better to use the Git Bash terminal (installed together with git) instead of the Windows shell.
+
+If the commands installed with npm are not working, is probably because the path is missing.
+
+Check https://stackoverflow.com/questions/30710550/node-js-npm-modules-installed-but-command-not-recognized
 
 ## More info
 
-More info at https://confluence.rakuten-it.com/confluence/x/w-FJnQ
-If you have Windows, read [WINDOWS.md](WINDOWS.md)
+More info at https://confluence.rakuten-it.com/confluence/x/7smNmw
 
 # **❤️😃 HAPPY CODING! 😃❤️**
