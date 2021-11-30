@@ -1,2 +1,2 @@
 #!/bin/bash
-elm-go src/Main.elm --port=8001 --dir=docs --start-page=200.html --pushstate -- --output=docs/elm.js --debug
+elm-go src/Main.elm --dir=docs --start-page=200.html --pushstate --hot -- --output=docs/elm.js --debug

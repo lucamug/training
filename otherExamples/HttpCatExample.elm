@@ -5,7 +5,7 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
 import Http
-import Json.Decode exposing (Decoder, field, string)
+import Json.Decode
 
 
 
@@ -104,6 +104,6 @@ getRandomCatGif =
         }
 
 
-gifDecoder : Decoder String
+gifDecoder : Json.Decode.Decoder String
 gifDecoder =
-    field "data" (field "images" (field "original" (field "url" string)))
+    Json.Decode.field "data" (Json.Decode.field "images" (Json.Decode.field "original" (Json.Decode.field "url" Json.Decode.string)))
